@@ -1,0 +1,16 @@
+[package]
+name = "PlaidOS"
+version = "0.1.0"
+authors = ["Robert Roland <robert@robertroland.org>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rust-libcore = "0.0.3"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
